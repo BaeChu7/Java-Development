@@ -4,9 +4,8 @@ import java.util.List;
 
 /*
 작성자 : 최희은
-작성일 : 2019-12-09
+작성일 : 2020-03-20
 내   용 : 문자열 안의 K개만큼 연속된 문자 최대한 제거
-특이사항 : Test 시, 해커랭크에서 Hidden Case 존재. 아직 발견 못함
 */
 
 public class StringCompression {
