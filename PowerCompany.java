@@ -22,7 +22,6 @@ public class PowerCompany {
 
 		List<Integer> numarr = new ArrayList<Integer>();
 
-		// String modelstr = sb(model);
 		for (int i = 0; i < gener.size(); i++) {
 			numarr.add(intnum(model, gener.get(i)));
 		}
