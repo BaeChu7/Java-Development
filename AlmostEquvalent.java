@@ -56,9 +56,6 @@ public class AlmostEquvalent {
 			sb.append(character);
 		}
 
-		// 이건 왜 안될까?
-		// String[] disLst = charSet.toArray(new String[charSet.size()]);
-
 		String[] disLst = sb.toString().split("");
 
 		return disLst;
