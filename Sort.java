@@ -65,7 +65,7 @@ public class Sort {
 		int[] a = { 3, 4, 6, 1, 8, 0 };
 
 		System.out.println(Arrays.toString(BubbleSort(a))); // Array를 바로 String형으로 변환
-		System.out.println(Arrays.toString(SelectSort(a)));
-		System.out.println(Arrays.toString(InsertSort(a)));
+		System.out.println(Arrays.toString(SelectSort(a))); // 선택정렬
+		System.out.println(Arrays.toString(InsertSort(a))); // 삽입정렬
 	}
 }
