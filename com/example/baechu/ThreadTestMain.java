@@ -20,5 +20,16 @@ public class ThreadTestMain {
 
 			thread.start(); // 스레드가 running 할 수 있도록 실행 공간을 할당까지만 한다.
 		}
+
+		SumThread sumThread = new SumThread();
+		sumThread.start();
+
+		try {
+			sumThread.join(); // join() 메서드는 sumThread 메서드의 run() 메서드가 모두 끝날때까지 기다린다는 의미
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("sum: " + sumThread.getSum());
 	}
 }
