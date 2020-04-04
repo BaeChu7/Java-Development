@@ -31,17 +31,25 @@ public class LinkedListTest {
 //		String secondstr = scan.nextLine();
 //		String[] arr = secondstr.split(" ");
 
-		LinkedList lst = new LinkedList();
+		LinkedList<Integer> lst = new LinkedList<Integer>();
+		
 		while (true) {
 			lst.add(i, scan.nextInt());
 
 			if (lst.size() == firstint) {
-				break; // 다음줄로 안 넘어감. space 구분으로 정수 5개가 입력되면 알아서 다음줄 입력할 수 있도록 수정 필요.
+				break; // 다음줄로 안 넘어감. space 구분으로 정수 5개가 입력되면 알아서 다음줄 입력할 수 있도록 수정 필요. key 이벤트 필요?
 			}
 			i++;
 		}
-
-		System.out.println(lst.get(3));
+		
+		int cnt = scan.nextInt();
+		
+		for (int a = 0 ; a < cnt * 2 ; a++) {
+			String transaction = scan.nextLine();
+		//	String transaction = scan.nextLine();
+		}
+		
+		System.out.println(lst.get(2));
 
 	}
 }
