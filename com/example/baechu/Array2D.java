@@ -16,18 +16,21 @@ public class Array2D {
 특이사항 :
 */
 	public static int findMaxValue(int[][] arr) {
-		
+		int sum = 0;
 		ArrayList<Integer> sumarr = new ArrayList<Integer>();
 		
-		for (int cnt = 0 ; cnt < 16 ; cnt++) {
-			for (int i = 0 ; i < 3 ; i++ ) {
-				for (int j = 0 ; j < 3 ; j++ ) {
-					arr[][]
+		for (int cnt = 0 ; cnt < 4 ; cnt++) {
+			for (int i = cnt ; i < cnt + 3 ; i++ ) {
+				for (int j = cnt ; j < cnt + 3 ; j++ ) {
+					sum	+= arr[i][j];
+					sumarr.add(sum);
 				}
 			}
 		}
 		
-		return max;
+		Collections.sort(sumarr, Collections.reverseOrder());
+		
+		return sumarr.get(0);
 	}
 	private static final Scanner scanner = new Scanner(System.in);
 
