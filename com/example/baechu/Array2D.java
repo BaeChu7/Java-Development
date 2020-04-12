@@ -21,6 +21,7 @@ import java.util.regex.*;
  * 특이사항 :
  *  2020-04-07) 검증 및 indexoutofbounds 오류 처리
  *  2020-04-10) 가능한 3 X 3 배열의 합 구하기
+ *  2020-04-12) 모래시계 모양대로 더하기
  */
 public class Array2D {
 	public static int findMaxValue(int[][] arr) {
@@ -31,7 +32,7 @@ public class Array2D {
 				int sum = 0;
 				
 				sum = arr[i][j] + arr[i][j + 1] + arr[i][j + 2]
-						+ arr[i + 1][j] + arr[i + 1][j + 1] + arr[i + 1][j + 2]
+						+ arr[i + 1][j + 1]
 					    + arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j + 2];
 				
 				sumarr.add(sum);
