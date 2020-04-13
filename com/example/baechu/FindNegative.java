@@ -33,7 +33,8 @@ public class FindNegative {
 		// 배열 안에서 연속된 수의 SubArray 구하기
 		for (int i = 0; i < a; i++) {
 			for (int j = i + 1; j <= a; j++) {
-				arr2.add(Arrays.copyOfRange(arr, i, j));
+				arr2.add(Arrays.copyOfRange(arr, i, j)); // copyOfRange(배열 대상, 시작 index, 끝 index)
+				                                         // 그러나 끝 index를 포함하진 않는다.
 			}
 		}
 
