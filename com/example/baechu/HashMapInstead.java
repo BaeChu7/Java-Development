@@ -7,6 +7,7 @@ import java.util.Scanner;
 작성일 : 2020-04-05
 내   용 : HashMap을 이용하지 않고 문자열 두개 비교 구현
 특이사항 : 두 개의 문자열을 받아 대소문자 구분 없이 문자 하나당 갯수가 완벽히 일치하면 Anagrams, 다르면 Not Anagrams 출력
+2020-04-17) Another Question Start 추가
 */
 public class HashMapInstead {
 	static boolean isAnagram(String a, String b) {

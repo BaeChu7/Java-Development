@@ -1,34 +1,32 @@
 package com.example.baechu;
-
-import java.util.Scanner;
-
 /*
 작성자 : 최희은
-작성일 : 
-내   용 : Test
+작성일 : 2020-04-17
+내   용 : 멀티클래스와 인터페이스
 */
-//
-//import java.util.*;
-//interface AdvancedArithmetic{
-//  int divisor_sum(int n);
-//}
-//
-//class MyCalculator implements AdvancedArithmetic{
-//	
-//	public int divisor_sum(int n){
-//		int sum = 0;
-//		
-//		for (int i = 1 ; i <= n ; i++) {
-//			if (n % i == 0) {
-//				sum += i;
-//			}
-//		}
-//		
-//		return sum;
-//	}
-//}
 
-class Solution{
+import java.util.*;
+
+interface AdvancedArithmetic{
+  int divisor_sum(int n);
+}
+
+class MyCalculator implements AdvancedArithmetic{
+	
+	public int divisor_sum(int n){
+		int sum = 0;
+		
+		for (int i = 1 ; i <= n ; i++) {
+			if (n % i == 0) {
+				sum += i;
+			}
+		}
+		
+		return sum;
+	}
+}
+
+class MultiClassNInterface{
     public static void main(String []args){
         MyCalculator my_calculator = new MyCalculator();
         System.out.print("I implemented: ");
@@ -38,9 +36,7 @@ class Solution{
         System.out.print(my_calculator.divisor_sum(n) + "\n");
       	sc.close();
     }
-    /*
-     *  ImplementedInterfaceNames method takes an object and prints the name of the interfaces it implemented
-     */
+    
     static void ImplementedInterfaceNames(Object o){
         Class[] theInterfaces = o.getClass().getInterfaces();
         for (int i = 0; i < theInterfaces.length; i++){
