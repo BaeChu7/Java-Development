@@ -32,7 +32,7 @@ public class TwoSort
 		int testCases = Integer.parseInt(in.nextLine());
 		
 		List<Student1> studentList = new ArrayList<Student1>();
-		while(testCases>0){
+		while(testCases > 0){
 			int id = in.nextInt();
 			String fname = in.next();
 			double cgpa = in.nextDouble();
