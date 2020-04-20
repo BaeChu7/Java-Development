@@ -28,7 +28,7 @@ class Student1{
 	}
 }
 
-//Complete the code
+//public class는 클래스명과 같아야 한다.
 public class Comparing
 {
 	public static void main(String[] args){
