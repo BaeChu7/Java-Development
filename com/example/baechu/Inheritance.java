@@ -19,7 +19,6 @@ class Adder extends Arithmetic{
 		
 		return a + b;
 	}
-
 }
 
 public class Inheritance{

@@ -13,14 +13,6 @@ public class StringCompression {
 	public static String compressWord(String word, int K) {
 		int cnt = 1;
 
-		/*
-		 * String[] arr = word.split(""); List<String> list = new ArrayList<String>();
-		 * List<Integer> list2 = new ArrayList<Integer>();
-		 * 
-		 * for (String str : arr) { list.add(str); } for (String str : arr) {
-		 * list2.add(Collections.frequency(list,str)); }
-		 */
-
 		if (compressCnt(word, K) < K || word.length() == 1) {
 			return word;
 		}
