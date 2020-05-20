@@ -17,7 +17,7 @@ true
  * 작성일 : 2020-05-18
  * 내 용 : stack 기술
  */
-public class Stack {
+public class Stack1 {
 	
     public static void main(String []argh)
 	{
@@ -33,7 +33,7 @@ public class Stack {
 		while (sc.hasNext()) {
 		     String input=sc.next();
 		     
-		     Stack<Character> stacky = new Stack<Character>();
+		     Stack<Character> stacky =  new Stack<Character>();
 		     for (int i = 0; i < input.length(); i++) {
 		        if (!stacky.isEmpty()) {
 		            switch(input.charAt(i)) {
