@@ -6,7 +6,7 @@ package com.example.baechu;
 특이사항 : 두 개의 문자열을 받아 대소문자 구분 없이 문자 하나당 갯수가 완벽히 일치하면 Anagrams, 다르면 Not Anagrams 출력
 */
 
-public class HashMap {
+public class HashMapTest {
 
 	/*
 	 * 두 개의 문자열 안에 들어있는 모든 문자에 대해 각각 문자열에 해당 문자가 몇개 들어있는지 비교 후

@@ -15,7 +15,7 @@ true
 /*
  * 작성자 : 최희은
  * 작성일 : 2020-05-18
- * 내 용 : stack 기술
+ * 내   용 : stack 기술
  */
 public class Stack1 {
 	
