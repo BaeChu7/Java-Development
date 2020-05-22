@@ -31,7 +31,7 @@ public class Stack1 {
 		
 		Scanner sc = new Scanner(System.in);
 		while (sc.hasNext()) {
-		     String input=sc.next();
+		     String input = sc.next();
 		     
 		     Stack<Character> stacky =  new Stack<Character>();
 		     for (int i = 0; i < input.length(); i++) {
