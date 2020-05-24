@@ -11,10 +11,10 @@ import java.lang.reflect.Method;
 
 class Printer
 {
-   public <T> T printArray(T t) {
-	   T aa = t;
-	   
-	   return aa;
+   public <T> void printArray(T[] arr) { // 모든 타입이라기 보다는 "배열 중" 모든 타입! []
+	   for(T item : arr){
+	        System.out.println(item);
+	   }
    }
  
 }
